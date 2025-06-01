@@ -4,6 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="assets/icon.svg" type="image/x-icon">
+    <style>
+        .swiper {
+            width: 100%;
+            max-width: 600px;
+            height: 300px;
+            margin: 20px auto;
+        }
+
+        .swiper-slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #eee;
+            font-size: 24px;
+        }
+    </style>
+
     <title>Home</title>
 </head>
 <body>
@@ -14,9 +33,9 @@
             </div>
 
             <ul class="nav-lista">
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
+                <li><a href="#destaques">Destaques</a></li>
+                <li><a href="sobre.html"></a>Sobre nós</li>
+                <li><a href="contato.html">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -25,6 +44,7 @@
         <figure class="img-banner">
             <img src="assets/imgs/banners/supreme.png" alt="">
         </figure>
+        <h1>O Artesão da Pizza</h1>
     </section>
 
     <section id="introducao">
@@ -55,7 +75,7 @@
         </div>
     </section>
 
-    <section id="cardapio">
+    <section id="destaques">
         <div class="container">
             <ul class="cardapio-categorias">
                 <li><a href="#tradicionais"><img src="assets/imgs/icones/pizza-tradicional.png" alt="">Tradicionais</a></li>
@@ -74,6 +94,8 @@
                                 </div>
 
                                 <div class="desc-pizza">
+                                    <h3>4 Queijos</h3>
+
                                     <p>
                                         Mussarela, provolone, catupiry original e parmesão
                                     </p>
@@ -96,12 +118,14 @@
                         <li>
                             <a class="pizza" href="">
                                 <div class="img-pizza">
-                                    <img src="assets/imgs/pizzas/4queijos.png" alt="">
+                                    <img src="assets/imgs/pizzas/brocolis-bacon.png" alt="">
                                 </div>
 
                                 <div class="desc-pizza">
+                                    <h3>Brócolis com bacon</h3>
+
                                     <p>
-                                        Mussarela, provolone, catupiry original e parmesão
+                                        Mussarela, brócolis e bacon
                                     </p>
 
                                     <div class="tam-pizza">
@@ -122,12 +146,14 @@
                         <li>
                             <a class="pizza" href="">
                                 <div class="img-pizza">
-                                    <img src="assets/imgs/pizzas/4queijos.png" alt="">
+                                    <img src="assets/imgs/pizzas/baiana.png" alt="">
                                 </div>
 
                                 <div class="desc-pizza">
+                                    <h3>Baiana</h3>
+
                                     <p>
-                                        Mussarela, provolone, catupiry original e parmesão
+                                        Calabresa moída, pimenta (opcional), ovos e cebola
                                     </p>
 
                                     <div class="tam-pizza">
@@ -148,12 +174,14 @@
                         <li>
                             <a class="pizza" href="">
                                 <div class="img-pizza">
-                                    <img src="assets/imgs/pizzas/4queijos.png" alt="">
+                                    <img src="assets/imgs/pizzas/portuguesa.png" alt="">
                                 </div>
 
                                 <div class="desc-pizza">
+                                    <h3>Portuguesa</h3>
+
                                     <p>
-                                        Mussarela, provolone, catupiry original e parmesão
+                                        Mussarela, presunto, ovos, azeitona preta fat. e cebola
                                     </p>
 
                                     <div class="tam-pizza">
@@ -178,12 +206,41 @@
                         <li>
                             <a class="pizza" href="">
                                 <div class="img-pizza">
-                                    <img src="assets/imgs/pizzas/4queijos.png" alt="">
+                                    <img src="assets/imgs/pizzas/frango-catupiry.png" alt="">
                                 </div>
 
                                 <div class="desc-pizza">
+                                    <h3>Frango com catupiry</h3>
+
                                     <p>
-                                        Mussarela, provolone, catupiry original e parmesão
+                                        Frango e catupiry original 
+                                    </p>
+
+                                    <div class="tam-pizza">
+                                        <div class="grande">
+                                            <h4>Grande</h4>
+                                            <span>R$ 99,99</span>
+                                        </div>
+                                        
+                                        <div class="broto">
+                                            <h4>Broto</h4>
+                                            <span>R$ 99,99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="pizza" href="">
+                                <div class="img-pizza">
+                                    <img src="assets/imgs/pizzas/calabresa.png" alt="">
+                                </div>
+
+                                <div class="desc-pizza">
+                                    <h3>Calabresa</h3>
+                                    <p>
+                                        Calabresa, cebola e orégano
                                     </p>
 
                                     <div class="tam-pizza">
@@ -208,8 +265,10 @@
                                 </div>
 
                                 <div class="desc-pizza">
+                                    <h3>Atum</h3>
+
                                     <p>
-                                        Mussarela, provolone, catupiry original e parmesão
+                                        Atum ralado e cebola
                                     </p>
 
                                     <div class="tam-pizza">
@@ -234,34 +293,10 @@
                                 </div>
 
                                 <div class="desc-pizza">
+                                    <h3>Margueria</h3>
+
                                     <p>
-                                        Mussarela, provolone, catupiry original e parmesão
-                                    </p>
-
-                                    <div class="tam-pizza">
-                                        <div class="grande">
-                                            <h4>Grande</h4>
-                                            <span>R$ 99,99</span>
-                                        </div>
-                                        
-                                        <div class="broto">
-                                            <h4>Broto</h4>
-                                            <span>R$ 99,99</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="pizza" href="">
-                                <div class="img-pizza">
-                                    <img src="assets/imgs/pizzas/4queijos.png" alt="">
-                                </div>
-
-                                <div class="desc-pizza">
-                                    <p>
-                                        Mussarela, provolone, catupiry original e parmesão
+                                        Mussarela, tomate, parmesão e manjericão
                                     </p>
 
                                     <div class="tam-pizza">
@@ -288,12 +323,70 @@
                         <li>
                             <a class="pizza" href="">
                                 <div class="img-pizza">
-                                    <img src="assets/imgs/pizzas/4queijos.png" alt="">
+                                    <img src="assets/imgs/pizzas/6queijos.png" alt="">
                                 </div>
 
                                 <div class="desc-pizza">
+                                    <h3>6 Queijos</h3>
+
                                     <p>
                                         Mussarela, provolone, catupiry original e parmesão
+                                    </p>
+
+                                    <div class="tam-pizza">
+                                        <div class="grande">
+                                            <h4>Grande</h4>
+                                            <span>R$ 99,99</span>
+                                        </div>
+                                        
+                                        <div class="broto">
+                                            <h4>Broto</h4>
+                                            <span>R$ 99,99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="pizza" href="">
+                                <div class="img-pizza">
+                                    <img src="assets/imgs/pizzas/calabresamel.png" alt="">
+                                </div>
+
+                                <div class="desc-pizza">
+                                    <h3>Calabresa com mel</h3>
+
+                                    <p>
+                                        Mussarela, presunto, ovos, azeitona preta fat. e cebola
+                                    </p>
+
+                                    <div class="tam-pizza">
+                                        <div class="grande">
+                                            <h4>Grande</h4>
+                                            <span>R$ 99,99</span>
+                                        </div>
+                                        
+                                        <div class="broto">
+                                            <h4>Broto</h4>
+                                            <span>R$ 99,99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="pizza" href="">
+                                <div class="img-pizza">
+                                    <img src="assets/imgs/pizzas/canadense.png" alt="">
+                                </div>
+
+                                <div class="desc-pizza">
+                                    <h3>Canadense</h3>
+
+                                    <p>
+                                        Mussarela, lombo tipo canadense, mel e raspas de limão
                                     </p>
 
                                     <div class="tam-pizza">
@@ -318,60 +411,10 @@
                                 </div>
 
                                 <div class="desc-pizza">
+                                    <h3>Caprese</h3>
+
                                     <p>
-                                        Mussarela, provolone, catupiry original e parmesão
-                                    </p>
-
-                                    <div class="tam-pizza">
-                                        <div class="grande">
-                                            <h4>Grande</h4>
-                                            <span>R$ 99,99</span>
-                                        </div>
-                                        
-                                        <div class="broto">
-                                            <h4>Broto</h4>
-                                            <span>R$ 99,99</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="pizza" href="">
-                                <div class="img-pizza">
-                                    <img src="assets/imgs/pizzas/4queijos.png" alt="">
-                                </div>
-
-                                <div class="desc-pizza">
-                                    <p>
-                                        Mussarela, provolone, catupiry original e parmesão
-                                    </p>
-
-                                    <div class="tam-pizza">
-                                        <div class="grande">
-                                            <h4>Grande</h4>
-                                            <span>R$ 99,99</span>
-                                        </div>
-                                        
-                                        <div class="broto">
-                                            <h4>Broto</h4>
-                                            <span>R$ 99,99</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="pizza" href="">
-                                <div class="img-pizza">
-                                    <img src="assets/imgs/pizzas/4queijos.png" alt="">
-                                </div>
-
-                                <div class="desc-pizza">
-                                    <p>
-                                        Mussarela, provolone, catupiry original e parmesão
+                                        Mussarela, tomate, mussarela de búfala, pesto de azeitona preta e manjericão
                                     </p>
 
                                     <div class="tam-pizza">
@@ -400,8 +443,9 @@
                                 </div>
 
                                 <div class="desc-pizza">
+                                    <h3>D'Butéco</h3>
                                     <p>
-                                        Mussarela, provolone, catupiry original e parmesão
+                                        Calabresa, cebola assada, azeitona verde fatiada, orégano e pimenta biquinho
                                     </p>
 
                                     <div class="tam-pizza">
@@ -426,8 +470,9 @@
                                 </div>
 
                                 <div class="desc-pizza">
+                                    <h3>Nordestina</h3>
                                     <p>
-                                        Mussarela, provolone, catupiry original e parmesão
+                                        Purê de abóbora, carne seca, cebola, mussarela e pimenta biquinho
                                     </p>
 
                                     <div class="tam-pizza">
@@ -452,8 +497,9 @@
                                 </div>
 
                                 <div class="desc-pizza">
+                                    <h3>O Artesão</h3>
                                     <p>
-                                        Mussarela, provolone, catupiry original e parmesão
+                                        Catupiry original, parmesão, mussarela de búfala, bacon e manjericão
                                     </p>
 
                                     <div class="tam-pizza">
@@ -478,8 +524,9 @@
                                 </div>
 
                                 <div class="desc-pizza">
+                                    <h3>Supreme</h3>
                                     <p>
-                                        Mussarela, provolone, catupiry original e parmesão
+                                        Mussarela, pepperoni, pimentão verde, azeitona roxa fatiada, champignon e parmesão
                                     </p>
 
                                     <div class="tam-pizza">
@@ -506,12 +553,13 @@
                         <li>
                             <a class="pizza" href="">
                                 <div class="img-pizza">
-                                    <img src="assets/imgs/pizzas/4queijos.png" alt="">
+                                    <img src="assets/imgs/pizzas/bananachocolate.png" alt="">
                                 </div>
 
                                 <div class="desc-pizza">
+                                    <h3>Banana com chocolate</h3>
                                     <p>
-                                        Mussarela, provolone, catupiry original e parmesão
+                                        Massa de cacau (opcional), banana, chocolate ao leite e gotas de chocolate
                                     </p>
 
                                     <div class="tam-pizza">
@@ -532,12 +580,13 @@
                         <li>
                             <a class="pizza" href="">
                                 <div class="img-pizza">
-                                    <img src="assets/imgs/pizzas/4queijos.png" alt="">
+                                    <img src="assets/imgs/pizzas/choocobis.png" alt="">
                                 </div>
 
                                 <div class="desc-pizza">
+                                    <h3>Chocobis</h3>
                                     <p>
-                                        Mussarela, provolone, catupiry original e parmesão
+                                        Massa de cacau (opcional), chocolate ao leite e bis branco
                                     </p>
 
                                     <div class="tam-pizza">
@@ -558,12 +607,13 @@
                         <li>
                             <a class="pizza" href="">
                                 <div class="img-pizza">
-                                    <img src="assets/imgs/pizzas/4queijos.png" alt="">
+                                    <img src="assets/imgs/pizzas/chocolate.png" alt="">
                                 </div>
 
                                 <div class="desc-pizza">
+                                    <h3>Chocolate</h3>
                                     <p>
-                                        Mussarela, provolone, catupiry original e parmesão
+                                        Massa de cacau (opcional), chocolate e gotas de chocolate
                                     </p>
 
                                     <div class="tam-pizza">
@@ -584,12 +634,13 @@
                         <li>
                             <a class="pizza" href="">
                                 <div class="img-pizza">
-                                    <img src="assets/imgs/pizzas/4queijos.png" alt="">
+                                    <img src="assets/imgs/pizzas/chocolatecoco.png" alt="">
                                 </div>
 
                                 <div class="desc-pizza">
+                                    <h3>Chocolate com coco</h3>
                                     <p>
-                                        Mussarela, provolone, catupiry original e parmesão
+                                        Massa de cacau (opcional), chocolate e coco gratinado gratinado
                                     </p>
 
                                     <div class="tam-pizza">
@@ -614,12 +665,13 @@
                         <li>
                             <a class="pizza" href="">
                                 <div class="img-pizza">
-                                    <img src="assets/imgs/pizzas/4queijos.png" alt="">
+                                    <img src="assets/imgs/pizzas/doceleitecoco.png" alt="">
                                 </div>
 
                                 <div class="desc-pizza">
+                                    <h3>Doce de leite com coco</h3>
                                     <p>
-                                        Mussarela, provolone, catupiry original e parmesão
+                                        Massa de cacau (opcional), doce de leite e coco gratinado
                                     </p>
 
                                     <div class="tam-pizza">
@@ -640,12 +692,13 @@
                         <li>
                             <a class="pizza" href="">
                                 <div class="img-pizza">
-                                    <img src="assets/imgs/pizzas/4queijos.png" alt="">
+                                    <img src="assets/imgs/pizzas/marshmellow.png" alt="">
                                 </div>
 
                                 <div class="desc-pizza">
+                                    <h3>Marshmellow</h3>
                                     <p>
-                                        Mussarela, provolone, catupiry original e parmesão
+                                        Massa de cacau (opcional), chocolate ao leite, marshmellow e bis de óreo
                                     </p>
 
                                     <div class="tam-pizza">
@@ -666,38 +719,13 @@
                         <li>
                             <a class="pizza" href="">
                                 <div class="img-pizza">
-                                    <img src="assets/imgs/pizzas/4queijos.png" alt="">
+                                    <img src="assets/imgs/pizzas/sensacao.png" alt="">
                                 </div>
 
                                 <div class="desc-pizza">
+                                    <h3>Sensação</h3>
                                     <p>
-                                        Mussarela, provolone, catupiry original e parmesão
-                                    </p>
-
-                                    <div class="tam-pizza">
-                                        <div class="grande">
-                                            <h4>Grande</h4>
-                                            <span>R$ 99,99</span>
-                                        </div>
-                                        
-                                        <div class="broto">
-                                            <h4>Broto</h4>
-                                            <span>R$ 99,99</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-
-                        <li>
-                            <a class="pizza" href="">
-                                <div class="img-pizza">
-                                    <img src="assets/imgs/pizzas/4queijos.png" alt="">
-                                </div>
-
-                                <div class="desc-pizza">
-                                    <p>
-                                        Mussarela, provolone, catupiry original e parmesão
+                                        Massa de cacau (opcional), chocolate ao leite, morango fresco e gotas de chocolate
                                     </p>
 
                                     <div class="tam-pizza">
@@ -724,12 +752,14 @@
                         <li>
                             <a class="pizza" href="">
                                 <div class="img-pizza">
-                                    <img src="assets/imgs/pizzas/4queijos.png" alt="">
+                                    <img src="assets/imgs/pizzas/2queijosvegano.png" alt="">
                                 </div>
 
                                 <div class="desc-pizza">
+                                    <h3>2 Queijos veganos</h3>
+
                                     <p>
-                                        Mussarela, provolone, catupiry original e parmesão
+                                        Mussarela vegana e cajupiry vegano
                                     </p>
 
                                     <div class="tam-pizza">
@@ -750,12 +780,14 @@
                         <li>
                             <a class="pizza" href="">
                                 <div class="img-pizza">
-                                    <img src="assets/imgs/pizzas/4queijos.png" alt="">
+                                    <img src="assets/imgs/pizzas/3queijosvegano.png" alt="">
                                 </div>
 
                                 <div class="desc-pizza">
+                                    <h3>3 Queijos veganos</h3>
+
                                     <p>
-                                        Mussarela, provolone, catupiry original e parmesão
+                                        Mussarela vegana, cajupiry vegano e parmesão vegano
                                     </p>
 
                                     <div class="tam-pizza">
@@ -776,12 +808,14 @@
                         <li>
                             <a class="pizza" href="">
                                 <div class="img-pizza">
-                                    <img src="assets/imgs/pizzas/4queijos.png" alt="">
+                                    <img src="assets/imgs/pizzas/abobrinhavegana.png" alt="">
                                 </div>
 
                                 <div class="desc-pizza">
+                                    <h3>Abobrinha vegana</h3>
+
                                     <p>
-                                        Mussarela, provolone, catupiry original e parmesão
+                                        Mussarela vegana, abobrinha, parmesão vegano e alho torrado
                                     </p>
 
                                     <div class="tam-pizza">
@@ -802,12 +836,14 @@
                         <li>
                             <a class="pizza" href="">
                                 <div class="img-pizza">
-                                    <img src="assets/imgs/pizzas/4queijos.png" alt="">
+                                    <img src="assets/imgs/pizzas/artvegan.png" alt="">
                                 </div>
 
                                 <div class="desc-pizza">
+                                    <h3>Art. Vegan</h3>
+
                                     <p>
-                                        Mussarela, provolone, catupiry original e parmesão
+                                        Escarola, palmito, champignon, cajupiry vegano e tomate seco
                                     </p>
 
                                     <div class="tam-pizza">
@@ -832,12 +868,14 @@
                         <li>
                             <a class="pizza" href="">
                                 <div class="img-pizza">
-                                    <img src="assets/imgs/pizzas/4queijos.png" alt="">
+                                    <img src="assets/imgs/pizzas/calabresavegana.png" alt="">
                                 </div>
 
                                 <div class="desc-pizza">
+                                    <h3>Calabresa vegana</h3>
+
                                     <p>
-                                        Mussarela, provolone, catupiry original e parmesão
+                                        Calabresa vegana, cebola e orégano
                                     </p>
 
                                     <div class="tam-pizza">
@@ -858,12 +896,14 @@
                         <li>
                             <a class="pizza" href="">
                                 <div class="img-pizza">
-                                    <img src="assets/imgs/pizzas/4queijos.png" alt="">
+                                    <img src="assets/imgs/pizzas/calabresameladocana.png" alt="">
                                 </div>
 
                                 <div class="desc-pizza">
+                                    <h3>Calabresa com melado de cana</h3>
+
                                     <p>
-                                        Mussarela, provolone, catupiry original e parmesão
+                                        Mussarela vegana, calabresa vegana, melado de cana e manjericão
                                     </p>
 
                                     <div class="tam-pizza">
@@ -884,12 +924,14 @@
                         <li>
                             <a class="pizza" href="">
                                 <div class="img-pizza">
-                                    <img src="assets/imgs/pizzas/4queijos.png" alt="">
+                                    <img src="assets/imgs/pizzas/margueritavegana.png" alt="">
                                 </div>
 
                                 <div class="desc-pizza">
+                                    <h3>Marguerita vegana</h3>
+
                                     <p>
-                                        Mussarela, provolone, catupiry original e parmesão
+                                        Cajupiry vegano, tomate, parmesãov vegano e manjericão
                                     </p>
 
                                     <div class="tam-pizza">
@@ -910,12 +952,14 @@
                         <li>
                             <a class="pizza" href="">
                                 <div class="img-pizza">
-                                    <img src="assets/imgs/pizzas/4queijos.png" alt="">
+                                    <img src="assets/imgs/pizzas/tomatesecovegano.png" alt="">
                                 </div>
 
                                 <div class="desc-pizza">
+                                    <h3>Tomate seco vegano</h3>
+
                                     <p>
-                                        Mussarela, provolone, catupiry original e parmesão
+                                        Mussarela vegana, tomate seco e cajupiry vegano
                                     </p>
 
                                     <div class="tam-pizza">
@@ -1004,34 +1048,46 @@
         </div>
     </section>
 
-    <section id="fale-conosco">
+    <section id="feedbacks">
         <div class="container">
-            <h1>Fale conosco</h1>
+            <h1>Feedbacks</h1>
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
-            <div class="formulario">
-                <form action="">
-                    <div class="nome-sobrenome">
-                        <label for="nome">Nome</label>
-                        <input type="text" name="nome" id="nome">
-
-                        <label for="sobrenome">Sobrenome</label>
-                        <input type="text" name="sobrenome" id="sobrenome">
-                    </div>
-
-                    <label for="celular">Celular</label>
-                    <input type="text" name="celular" id="celular">
-
-                    <label for="email">E-mail</label>
-                    <input type="email" name="email" id="email">
-
-                    <textarea name="mensagem" id="mensagem">Mensagem</textarea>
-
-                    <input type="button" value="Enviar">
-                </form>
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
             </div>
         </div>
     </section>
     
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            loop: true,
+            pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+            },
+            navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+            },
+            autoplay: {
+            delay: 3000,
+            disableOnInteraction: false
+            }
+        });
+    </script>
+
 </body>
 </html>
