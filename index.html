@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="shortcut icon" href="assets/icon.svg" type="image/x-icon">
+    <title>Home</title>
     <style>
         .swiper {
             width: 100%;
@@ -23,33 +27,32 @@
         }
     </style>
 
-    <title>Home</title>
+    
 </head>
 <body>
     <header>
         <nav>
-            <div class="img-logo">
-                <img src="assets/icon.svg" alt="">
-            </div>
+            <div class="header-container">
+                <div class="img-logo">
+                    <img src="assets/icon.svg" alt="">
+                </div>
 
-            <ul class="nav-lista">
-                <li><a href="#destaques">Destaques</a></li>
-                <li><a href="sobre.html"></a>Sobre nós</li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
+                <ul class="nav-lista">
+                    <li><a href="#destaques">Destaques</a></li>
+                    <li><a href="sobre.html">Sobre nós</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <section id="banner">
-        <figure class="img-banner">
-            <img src="assets/imgs/banners/supreme.png" alt="">
-        </figure>
         <h1>O Artesão da Pizza</h1>
     </section>
 
     <section id="introducao">
-        <div class="container">
-            <div class="introducao-item-1">
+        <div class="introducao-container">
+            <div class="introducao-item introducao-item-1">
                 <img src="assets/imgs/destaques/fermentacao.png" alt="">
                 <h2>Massa</h2>
                 <p>
@@ -57,15 +60,15 @@
                 </p>
             </div>
 
-            <div class="introducao-item-2">
-                <h2>Molho</h2>
+            <div class="introducao-item introducao-item-2">
                 <img src="assets/imgs/destaques/molho.png" alt="">
+                <h2>Molho</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur. Phasellus facilisis eu laoreet augue sce
+                    Lorem ipsum dolor sit amet consectetur.  Phasellus facilisis eu laoreet augue sce
                 </p>
             </div>
 
-            <div class="introducao-item-3">
+            <div class="introducao-item introducao-item-3">
                 <img src="assets/imgs/destaques/pizza-artesanal.png" alt="">
                 <h2>Pizza artesanal</h2>
                 <p>
@@ -76,15 +79,17 @@
     </section>
 
     <section id="destaques">
-        <div class="container">
-            <ul class="cardapio-categorias">
-                <li><a href="#tradicionais"><img src="assets/imgs/icones/pizza-tradicional.png" alt="">Tradicionais</a></li>
+        <h1>Destaques</h1>
+
+        <div class="destaques-container">
+            <ul class="destaques-categorias">
+                <li class="ativo"><a href="#tradicionais"><img src="assets/imgs/icones/pizza-tradicional.png" alt="">Tradicionais</a></li>
                 <li><a href="#exclusivais"><img src="assets/imgs/icones/exclusiva.png" alt="">Exclusivas</a></li>
                 <li><a href="#doces"><img src="assets/imgs/icones/doce.png" alt="">Doces</a></li>
                 <li><a href="#veganas"><img src="assets/imgs/icones/vegana.png" alt="">Veganas</a></li>
             </ul>
 
-            <div id="tradicionais">
+            <div id="tradicionais" class="pizzas-container">
                 <div>
                     <ul>
                         <li>
@@ -293,7 +298,7 @@
                                 </div>
 
                                 <div class="desc-pizza">
-                                    <h3>Margueria</h3>
+                                    <h3>Marguerita</h3>
 
                                     <p>
                                         Mussarela, tomate, parmesão e manjericão
@@ -317,7 +322,7 @@
                 </div>
             </div>
 
-            <div id="exclusivais">
+            <div id="exclusivais" class="pizzas-container">
                 <div>
                     <ul>
                         <li>
@@ -439,13 +444,13 @@
                         <li>
                             <a class="pizza" href="">
                                 <div class="img-pizza">
-                                    <img src="assets/imgs/pizzas/4queijos.png" alt="">
+                                    <img src="assets/imgs/pizzas/dbuteco.png" alt="">
                                 </div>
 
                                 <div class="desc-pizza">
                                     <h3>D'Butéco</h3>
                                     <p>
-                                        Calabresa, cebola assada, azeitona verde fatiada, orégano e pimenta biquinho
+                                        Calabresa, cebola assada, azeitona verde fat., orégano e pimenta biquinho
                                     </p>
 
                                     <div class="tam-pizza">
@@ -466,7 +471,7 @@
                         <li>
                             <a class="pizza" href="">
                                 <div class="img-pizza">
-                                    <img src="assets/imgs/pizzas/4queijos.png" alt="">
+                                    <img src="assets/imgs/pizzas/nordestina.png" alt="">
                                 </div>
 
                                 <div class="desc-pizza">
@@ -493,7 +498,7 @@
                         <li>
                             <a class="pizza" href="">
                                 <div class="img-pizza">
-                                    <img src="assets/imgs/pizzas/4queijos.png" alt="">
+                                    <img src="assets/imgs/pizzas/oartesao.png" alt="">
                                 </div>
 
                                 <div class="desc-pizza">
@@ -520,7 +525,7 @@
                         <li>
                             <a class="pizza" href="">
                                 <div class="img-pizza">
-                                    <img src="assets/imgs/pizzas/4queijos.png" alt="">
+                                    <img src="assets/imgs/pizzas/supreme.png" alt="">
                                 </div>
 
                                 <div class="desc-pizza">
@@ -547,7 +552,7 @@
                 </div>
             </div>
 
-            <div id="doces">
+            <div id="doces" class="pizzas-container">
                 <div>
                     <ul>
                         <li>
@@ -746,7 +751,7 @@
                 </div>
             </div>
 
-            <div id="veganas">
+            <div id="veganas" class="pizzas-container">
                 <div>
                     <ul>
                         <li>
@@ -987,12 +992,12 @@
     </section>
 
     <section id="experiencia">
-        <div class="container">
-            <h1>Melhore sua experiência</h1>
+        <h1>Melhore sua experiência</h1>
 
+        <div class="experiencia-container">
             <ul>
                 <li>
-                    <span class="num-exp">01.</span>
+                    <span class="exp-num">01.</span>
                     <h3>Faça seu pedido</h3>
                     <p>
                         Faça seu pedido através do nosso <a href="">app</a>
@@ -1000,34 +1005,34 @@
                 </li>
 
                 <li>
-                    <span class="num-exp">02.</span>
-                    <h3>Faça seu pedido</h3>
+                    <span class="exp-num">02.</span>
+                    <h3>"Saiu para entrega"</h3>
                     <p>
-                        Faça seu pedido através do nosso <a href="">app</a>
+                        Ao receber a notificação que seu pedido saiu para entrega, ligue seu forno na temperatura máxima para aquecê-lo.
                     </p>
                 </li>
 
                 <li>
-                    <span class="num-exp">03.</span>
-                    <h3>Faça seu pedido</h3>
+                    <span class="exp-num">03.</span>
+                    <h3>"Meu pedido chegou. E agora?"</h3>
                     <p>
-                        Faça seu pedido através do nosso <a href="">app</a>
+                       Usando uma forma, você colocará sua pizza dentro do forno (mantendo a mesma temperatura) durante 7 minutos.
                     </p>
                 </li>
 
                 <li>
-                    <span class="num-exp">04.</span>
-                    <h3>Faça seu pedido</h3>
+                    <span class="exp-num">04.</span>
+                    <h3>Pronto!</h3>
                     <p>
-                        Faça seu pedido através do nosso <a href="">app</a>
+                        Após os 7 minutos, sua pizza estará pronta, como se estivesse acabado de sair do forno do O Artesão da Pizza. Sua experiência com deliveryserá genuína!
                     </p>
                 </li>
             </ul>
         </div>
     </section>
 
-    <section id="pizza-italiana">
-        <div class="container">
+    <section id="estilo-produto">
+        <div class="estilo-container">
             <div class="img-pizza-italiana">
                 <figure>
                     <img src="assets/imgs/pizzas/borda.png" alt="">
@@ -1049,8 +1054,8 @@
     </section>
 
     <section id="feedbacks">
+        <h1>Feedbacks</h1>
         <div class="container">
-            <h1>Feedbacks</h1>
             <div class="swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
