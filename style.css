@@ -87,6 +87,7 @@ header .nav-lista a{
     gap: 40px;
     justify-content: center;
     padding: 60px 0;
+    flex-wrap: wrap;
 }
 
 .introducao-item{
@@ -165,9 +166,31 @@ header .nav-lista a{
 
 /*Pizzas destaques*/
 .pizzas-container{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
     gap: 20px;
+}
+
+.js .pizzas{
+    height: 0;
+
+}
+
+.js .pizzas.ativo{
+    height: 960px;
+    animation: .5s animaTab ease;
+
+}
+
+@keyframes animaTab {
+    from{
+        opacity: 0;
+        transform: translate3d(0, -50px, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
 }
 
 .pizzas-container ul li{
@@ -175,9 +198,8 @@ header .nav-lista a{
     margin-bottom: 20px;
     border-radius: 16px;
     padding: 30px;
+    max-width: 680px;
 }
-
-
 
 .pizzas-container ul li .pizza{
     display: flex;
@@ -192,6 +214,7 @@ header .nav-lista a{
 }
 
 .pizzas-container ul li .desc-pizza p{
+    max-width: 35ch;
     color: #646464;
 }
 
@@ -233,6 +256,7 @@ section#experiencia > h1{
 
 .experiencia-container ul{
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     justify-content: center;
 }
@@ -251,6 +275,7 @@ section#experiencia > h1{
     margin-top: 15px;
     margin-bottom: 10px;
     font-weight: 400;
+    max-width: 25ch;
 }
 
 .experiencia-container p{
