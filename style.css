@@ -35,10 +35,29 @@ span, a, p{
     font-size: 24px;
     font-weight: 500;
     color: #000;
+    transition: .2s;
 }
 .btn-cta:hover{
     background: linear-gradient(90deg, #FF9808 0.09%, #FFAB08 99.91%);
+    transform: scale(1.05);
 }
+
+/*Carrossel de feedback*/
+.swiper {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    margin: 20px auto;
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee;
+    font-size: 24px;
+}
+
 /*header*/
 header {
     background-color: #000;
@@ -63,6 +82,9 @@ header .nav-lista a{
     font-size: 24px;
     font-weight: 300;
 }
+
+
+
 /*Banner*/
 #banner {
     height: 650px;
@@ -177,7 +199,7 @@ header .nav-lista a{
 }
 
 .js .pizzas.ativo{
-    height: 960px;
+    height: 970px;
     animation: .5s animaTab ease;
 
 }
